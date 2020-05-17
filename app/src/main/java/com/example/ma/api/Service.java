@@ -1,6 +1,7 @@
 package com.example.ma.api;
 
 import com.example.ma.model.MoviesResponse;
+import com.example.ma.model.ReviewResponse;
 import com.example.ma.model.TrailerResponse;
 
 import retrofit2.Call;
@@ -18,4 +19,7 @@ public interface Service {
 
     @GET("movie/{movie_id}/videos")
     Call<TrailerResponse> getMovieTrailer(@Path("movie_id") int id, @Query("api_key") String apiKey);
+
+    @GET("movie/{movie_id}/reviews")
+    Call<ReviewResponse>getMovieReviews(@Path("movie_id") int id, @Query("api_key") String apiKey);
 }

@@ -40,6 +40,7 @@
                     tools:layout_constraintLeft_creator ="1"
                     />
 
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -99,6 +100,7 @@
                     app:layout_constraintBottom_toTopOf="@+id/userrating"
                     app:layout_constraintLeft_toRightOf="@+id/releasedate"
                     android:background="@color/colorPrimary"/>
+
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/recycler_view1"
